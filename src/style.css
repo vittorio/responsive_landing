@@ -97,8 +97,9 @@ header {
     text-align: center;
     margin-top: 24px;
     margin-bottom: 22px; }
-  .content .appStoreTriggerWrapper {
-    padding: 0 20px; }
+  @media screen and (min-width: 416px) {
+    .content .appStoreTriggerWrapper {
+      padding: 0 20px; } }
   .content .appStoreTrigger {
     width: 100%;
     box-shadow: 0 4px 15px rgba(243, 68, 79, 0.3);

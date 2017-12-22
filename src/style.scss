@@ -131,7 +131,9 @@ header {
   }
 
   .appStoreTriggerWrapper {
-    padding: 0 20px;
+    @media screen and (min-width: $container_max_width) {
+      padding: 0 20px;
+    }
   }
 
   .appStoreTrigger {
