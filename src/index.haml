@@ -1,0 +1,33 @@
+%html
+  %head
+    %title Landing
+    %link{:href => "//cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css", :rel => "stylesheet"}
+    %link{:href => "./style.css", :rel => "stylesheet"}
+
+  %body
+    .grid-container
+      %header.grid-x
+        %h2.cell Instructions
+        %h4.cell Go to App Store and search for
+
+        .searchForm.cell.small-6.small-offset-3{:data-clipboard-text => "gift cards"} gift cards
+        .status.cell tap on the text above to copy
+
+      .content.grid-x
+        %h4.cell.small-8.small-offset-2 Download PocketFlip on position 3 to&nbsp;get your reward
+        .appCard.cell.small-8.small-offset-2
+          .grid-x
+            .iconWrapper.cell.small-4
+              %img{:src => "./img/appIcon.svg"}
+            .cell.small-4
+              %p.title PocketFlip
+              %p.category Entertaiment
+              .rating
+            .cell.small-2.small-offset-1
+              %button Get
+
+        .appStoreTriggerWrapper.cell.small-8.small-offset-2
+          %button.appStoreTrigger Go to App Store
+
+    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"}
+    %script{:src => "./script.js"}
