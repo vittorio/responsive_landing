@@ -1,6 +1,6 @@
-new Clipboard('.searchForm');
+var clipboard = new Clipboard('.searchForm');
 
-document.querySelector('.searchForm').addEventListener('click', function () {
+clipboard.on('success', function(e) {
   document.querySelector('.status').textContent = 'text copied...';
+  e.clearSelection();
 });
-
