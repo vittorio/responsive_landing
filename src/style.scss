@@ -21,6 +21,7 @@ body {
   background: $body_bg;
   font-family: $system_font;
   display: flex;
+  min-height: 100vh;
 }
 
 .grid-container {
@@ -91,9 +92,17 @@ header {
   padding: 10px;
   margin-bottom: 45px;
 
+  .imgOverlay {
+    border-radius: 28%;
+    overflow: hidden;
+    max-width: 78px;
+    max-height: 78px;
+  }
+
   img {
     width: auto;
   }
+
 
   .title {
     color: $dark_color;

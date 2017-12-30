@@ -1,7 +1,8 @@
 body {
   background: #004d92;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  display: flex; }
+  display: flex;
+  min-height: 100vh; }
 
 .grid-container {
   max-width: 416px;
@@ -57,6 +58,11 @@ header {
   background-color: #fff;
   padding: 10px;
   margin-bottom: 45px; }
+  .appCard .imgOverlay {
+    border-radius: 28%;
+    overflow: hidden;
+    max-width: 78px;
+    max-height: 78px; }
   .appCard img {
     width: auto; }
   .appCard .title {
