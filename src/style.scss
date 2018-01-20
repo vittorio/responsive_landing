@@ -37,6 +37,10 @@ body {
   }
 }
 
+.centered {
+  margin: 0 auto;
+}
+
 header {
   background: url('./img/bg.png') 0 0 no-repeat;
   background-size: cover;
@@ -63,25 +67,16 @@ header {
     margin-bottom: 22px;
   }
 
-  .searchForm {
-    box-shadow: 0 2px 4px $searchbox_shadow_color;
-    border-radius: 12px;
-    padding: 10px;
-    padding-left: 36px;
-    cursor: pointer;
-    background: $light_color url("./img/magnifier.svg") 12px center no-repeat;
-
-    &:active {
-      background-color: $searchbox_active_color;
-    }
+  .icon {
+    text-align: center;
   }
 
-  .status {
-    opacity: 0.4;
-    color: $light_color;
-    font-size: 12px;
-    text-align: center;
-    margin-top: 6px;
+  .icon-text {
+    max-width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    opacity: .9;
+    font-size: 13px;
   }
 }
 
@@ -91,6 +86,7 @@ header {
   background-color: $light_color;
   padding: 10px;
   margin-bottom: 45px;
+  margin-top: 26px;
 
   .imgOverlay {
     border-radius: 28%;

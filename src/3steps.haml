@@ -11,12 +11,27 @@
       %header.grid-x
         %h2.cell Instructions
         %h4.cell Go to App Store and search for
-
-        .searchForm.cell.small-8.small-offset-2.medium-6.medium-offset-3{"data-clipboard-text" => "gift cards"} gift cards
-        .status.cell tap on the text above to copy
+        .cell
+          .grid-x
+            .cell.small-9.centered
+              .grid-x
+                .cell.small-4
+                  .icon
+                    %img{:src => "./img/download-icon.png"}
+                    .icon-text
+                      Download
+                      %br
+                      the&nbsp;app
+                .cell.small-4
+                  .icon
+                    %img{:src => "./img/collect-icon.png"}
+                    .icon-text Open & Collect 999 Coins
+                .cell.small-4
+                  .icon
+                    %img{:src => "./img/get-free-icon.png"}
+                    .icon-text Get free rewards
 
       .content.grid-x
-        %h4.cell.small-8.small-offset-2 Download PocketFlip on position 3 to&nbsp;get your reward
         .appCard.cell.small-10.small-offset-1.medium-8.medium-offset-2
           .grid-x
             .cell.small-4
@@ -31,6 +46,3 @@
 
         .appStoreTriggerWrapper.cell.small-8.small-offset-2
           %button.appStoreTrigger Go to App Store
-
-    %script{:src => "//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"}
-    %script{:src => "./script.js"}

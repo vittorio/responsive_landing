@@ -1,0 +1,45 @@
+!!! html
+%html
+  %head
+    %title Landing
+    %link{:href => "//cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css", :rel => "stylesheet"}
+    %link{:href => "./style.css", :rel => "stylesheet"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
+
+  %body
+    .grid-container
+      %header.grid-x
+        %h2.cell Instructions
+        %h4.cell
+          Go to App Store and search for
+          %br
+          PocketFlip
+        .cell
+          .grid-x
+            .cell.small-offset-2.small-4
+              .icon
+                %img{:src => "./img/download-icon.png"}
+                .icon-text
+                  Download
+                  %br
+                  the&nbsp;app
+            .cell.small-4
+              .icon
+                %img{:src => "./img/complete-icon.png"}
+                .icon-text Complete Two Offers
+
+      .content.grid-x
+        .appCard.cell.small-10.small-offset-1.medium-8.medium-offset-2
+          .grid-x
+            .cell.small-4
+              .imgOverlay
+                %img{:src => "./img/icon.jpg"}
+            .cell.small-4
+              %p.title PocketFlip
+              %p.category Entertainment
+              .rating
+            .cell.small-2.small-offset-1
+              %button Get
+
+        .appStoreTriggerWrapper.cell.small-8.small-offset-2
+          %button.appStoreTrigger Go to App Store
